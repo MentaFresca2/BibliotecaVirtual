@@ -1,0 +1,20 @@
+{
+    "routes": [
+      {
+        "source": "/About",
+        "destination": "/app/About/page"
+      },
+      {
+        "source": "/Cards",
+        "destination": "/app/Cards/page"
+      },
+      {
+        "source": "/Mybooks",
+        "destination": "/app/MyBooks/page"
+      },
+      {
+        "source": "/Search",
+        "destination": "/app/Search/page"
+      }
+    ]
+  }
