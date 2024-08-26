@@ -4,8 +4,32 @@
 
 body
 {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height:auto;
+  min-height: 2000px;
+}
+main
+{
+  width: auto;
+  height:auto;
+  min-height: 2000px;
+
+}
+@keyframes fade {
+  from {
+      opacity: 0; /* Comienza invisible */
+  }
+  to {
+      opacity: 1; /* Termina visible */
+  }
+}
+.animation
+{ 
+  @starting-style
+  {
+    opacity: 0;
+  }
+  transition:background-color 0.3s ease;
 }
 .button
 {

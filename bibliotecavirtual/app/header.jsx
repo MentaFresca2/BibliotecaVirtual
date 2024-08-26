@@ -7,7 +7,7 @@ export default function Header() {
     
 return(
 
-        <div className="h-[80px] w-[100%] align-middle bg-[#FAF3E6] flex justify-center gap-[0px] flex-row font-extrabold text-[23px]">
+        <div className="h-[80px] w-[100%] align-middle bg-[#CFBB94] flex justify-center gap-[0px] flex-row font-extrabold text-[23px]">
         <IconLibraryOutline viewBox="0 100 512 512" fill="currentColor" height="100px" width="100px" className="inline align-middle pl-5 pr-5 content-center flex-col justify-center"/>
         <a href="/" className="align-middle p-5 content-center flex-col justify-center flex button">
           <span className="h-min w-[100%] flex justify-center">Home</span>
