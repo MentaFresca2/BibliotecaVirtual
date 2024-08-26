@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export default function SearchCard({averageRating, tags, id,title,olid , author, publishYear}) {
+export default function SearchCard({averageRating, tags, id,title,olid ,classa, author, publishYear}) {
     // Esto normalmente vendría de props o de una consulta de datos
 
 
@@ -48,7 +48,7 @@ export default function SearchCard({averageRating, tags, id,title,olid , author,
 
 
 
-      <div className="w-full h-[480px] max-w-sm overflow-hidden bg-white rounded-lg shadow-lg">
+      <div className={`w-full h-[480px] ${classa} max-w-sm overflow-hidden bg-white rounded-lg shadow-lg`}>
         <div className="p-6">
           <div className="flex flex-col items-center">
             <img

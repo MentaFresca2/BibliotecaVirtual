@@ -17,20 +17,46 @@ main
 }
 @keyframes fade {
   from {
-      opacity: 0; /* Comienza invisible */
+      opacity: 0.4;
   }
   to {
-      opacity: 1; /* Termina visible */
+      opacity: 1;
   }
 }
-.animation
+.loadingAnimation
 { 
-  @starting-style
-  {
-    opacity: 0;
-  }
-  transition:background-color 0.3s ease;
+  animation: fade 0.7s ease-in-out infinite alternate;
 }
+
+.cardAnimation{
+  opacity: 1;
+  transition:all 1s ease;
+  transition-delay: 0.5s;
+  @starting-style {
+    opacity: 0;
+    translate:0px 200px;
+  }
+}
+.cardAnimation:nth-child(1) { transition-delay: 0s; }
+.cardAnimation:nth-child(2) { transition-delay: 0.07s; }
+.cardAnimation:nth-child(3) { transition-delay: 0.14s; }
+.cardAnimation:nth-child(4) { transition-delay: 0.21s; }
+.cardAnimation:nth-child(5) { transition-delay: 0.28s; }
+.cardAnimation:nth-child(6) { transition-delay: 0.35s; }
+.cardAnimation:nth-child(7) { transition-delay: 0.42s; }
+.cardAnimation:nth-child(8) { transition-delay: 0.49s; }
+.cardAnimation:nth-child(9) { transition-delay: 0.56s; }
+.cardAnimation:nth-child(10) { transition-delay: 0.63s; }
+.cardAnimation:nth-child(11) { transition-delay: 0.7s; }
+.cardAnimation:nth-child(12) { transition-delay: 0.77s; }
+.cardAnimation:nth-child(13) { transition-delay: 0.84s; }
+.cardAnimation:nth-child(14) { transition-delay: 0.91s; }
+.cardAnimation:nth-child(15) { transition-delay: 0.98s; }
+.cardAnimation:nth-child(16) { transition-delay: 1.05s; }
+.cardAnimation:nth-child(17) { transition-delay: 1.12s; }
+.cardAnimation:nth-child(18) { transition-delay: 1.19s; }
+.cardAnimation:nth-child(19) { transition-delay: 1.26s; }
+.cardAnimation:nth-child(20) { transition-delay: 1.33s; }
 .button
 {
   transition: background-color 0.3s ease;

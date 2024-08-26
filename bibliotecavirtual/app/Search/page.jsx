@@ -11,7 +11,7 @@ export default function Search() {
     const [data , setData] = useState([])
     const [loading, setLoading] = useState(true)
     useEffect(() =>{
-        
+        setLoading(true)
         fetch(`https://openlibrary.org/search.json?q=${searchValue}`)
             .then((res) => res.json())
             .then((res) =>{
@@ -37,7 +37,7 @@ export default function Search() {
 
     function Buscar(inputValue)
     {
-        setLoading(true)
+      
         setSearchValue(inputValue)
     }
     
@@ -57,7 +57,8 @@ export default function Search() {
                     
                     loading == false ? (data.map(dataa => (
                     <SearchCard
-                      olid = {dataa.lending_edition_s}
+                      classa="cardAnimation"  
+                      olid={dataa.lending_edition_s}
                       averageRating={dataa.ratings_average}
                       ratingCount={dataa.ratings_count}
                       id={dataa.cover_i}
@@ -67,7 +68,7 @@ export default function Search() {
                       isbn={dataa.isbn}
                     />
                     ))) :
-                    <svg version="1.1" x="0px" y="0px" width="200px"
+                    <svg version="1.1" x="0px" y="0px" width="200px" className="loadingAnimation"
                       viewBox="0 0 100 100" enable-background="new 0 0 100 100">
                     <circle fill="none" stroke="#525A66" stroke-width="4" stroke-miterlimit="10" cx="50" cy="50" r="48"/>
                     <line fill="none" stroke-linecap="round" stroke="#5A7BA5" stroke-width="4" stroke-miterlimit="10" x1="50" y1="50" x2="85" y2="50.5">
